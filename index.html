@@ -1,47 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wallace Graça - Data Engineer</title>
+    <title>Portfolio Warlei.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
+
 <body>
 
-<!-- Hero Description -->
-<div class="heroDescription">
-    <p class="greeting">HI THERE! I'M</p>
-    <h1><span>Wallace Graça</span></h1>
-    <div class="heroImageContainer">
-        <img src="assets/me/wallace-graca.png" alt="A picture of Wallace Graça.">
-    </div>
-    <h1><span>Data Engineer</span></h1>
-    <h1><span>Skills: SQL - Python - Spark - GCP</span></h1>
-    <div class="socialsResume">
-        <ul class="socialsList">
-            <!-- LinkedIn -->
-            <li>
-                <a href="https://www.linkedin.com/in/wallace-camargo-35b615171/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn">
-                </a>
-            </li>
-            <!-- GitHub -->
-            <li>
-                <a href="https://github.com/wlcamargo" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub">
-                </a>
-            </li>
-            <!-- YouTube -->
-            <li>
-                <a href="https://www.youtube.com/channel/UCK0B4IoF57JoiVVVeEcN8-A/videos" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&amp;logo=youtube&amp;logoColor=white" alt="YouTube">
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
+    <!-- custom css -->
+    
+    <header class="header">
+        <a href="#" class="logo">Portfólio</a>
 
-<!-- Texto de Deploy Automatizado -->
-<p>This is an automated deployment to cloud run GCP with github actions. Developed by Wallace Graça Year 2024 </p>
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#services">Serviços</a>
+            <a href="#portifolio">Portifolio</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
 
+    <section class="home">
+        <div class="home-content">
+            <h3>Olá, Meu nome é</h3>
+            <h1>Warlei Faria</h1>
+            <h3>Sou <span>Analista Cloud</span></h3>
+            <p>Formado em Tecnologia de Redes de Computadores, com experiencia no mercado Multi-Cloud e vivencia nas principais plataformas Cloud, AWS, Azure, Google Cloud e Oracle OCI.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/warleirf" target="_BLANK"><i class='bx bxl-facebook'></i></a>
+                <a href="https://x.com/warleirodrigues" target="_BLANK"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.instagram.com/warleirf/?next=%2F" target="_BLANK"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/warleifaria/" target="_BLANK"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1dOr-IeA2FQ9RdQbJxBN04Gsq6Fnj8_y7/view?usp=drive_link" target="_BLANK" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="images/home3.png" alt="">     
+        </div>
+    </section>
+
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">Sobre <span>mim</span></h2>
+            <h3>Analista Cloud!</h3>
+            <p> Seja bem vindo(a) ao meu site pessoal, sou formado em Tecnologia de Redes de Computadores, onde iniciei minha carreira profissional 
+                na área de comercio, dando suporte técnico em sistemas de gerenciamento ERP, 
+                financeiro e contabil, hoje atuo com plataformas Cloud buscando sempre autonomia, automaçao de tarefas e sustentabilidade.
+                Como sabemos tecnologia é sempre muito dinâmico, então sempre procuro aprender e me desenvolver mais em 
+                todas as áreas relacionadas, principalmente em Infraestrutura Cloud e Segurança onde eu me identifico.</p>
+            
+            <p>  Na minha caminhada profissional passei por diversas empresas e desafios, tive a oportunidade de aprender e conviver em muitas atividade e projetos, 
+                áreas de Serviços, Industria Química, Desenvolvimento de Sistemas, Mineração e Financeiro, o que ajudou muito no meu desenvolvimento profissional.</p> 
+                
+            <p>  Com uso de ferramentas (Kubernetes, Terraform, Ansible, Github, gitlab, Jenkins, Rancher) 
+                e serviços em nuvem AWS (ec2, s3, ecs, ecr, eks, route53, rds, lambda, cloud watch, cloud formation, 
+                system manager, fsx entre outros) para tornar mais fácil o dia-a-dia na entregas de projetos com 
+                segurança, sustentação, orgazização, confiável e escalável.</p>
+                <a href="#" class="btn">Ler mais</a>
+        </div>
+    </section>
+
+
+    <!-- services section designe -->
+    <section class="services" id="services">
+        <h2 class="heading">Os <span>Serviços</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-cloud' ></i>
+                <h3>Multi-Cloud</h3>
+                <p>Integração de todas as clouds (aws, azure, gcp e oci) com ambiente diversificado
+                    e com as particularidades e serviços de cada uma. Essa pratica está cada vez
+                    mais comum no mercado, utilizando um custo mais otimizado de acordo com a necessidade
+                    de cada cliente.<p>
+                <a href="#" class="btn">Ler mais</a>
+            </div>
+            
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bxl-aws'></i>
+                <h3>DevOps</h3>
+                <p>O DevOps permite que funcões anteriormente isoladas -desenvolvimento, operacões de Ti,
+                    engenharia da qualidade e segurança, atuem de forma coordenada e coloborativa para gerar
+                    produtos melhores e mais confiavéis. Ferramentas bastante utilizadas inclui Terraform,
+                    git, ansible, jenkins, Kubernetes, etc.
+                </p>
+                <a href="#" class="btn">Ler mais</a>
+            </div>
+               
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-expand-horizontal'></i>
+                    <h3>FinOps</h3>
+                    <p>FinOps é o modelo operacional para a nuvem - uma combinação de sistemas e práticas recomendadas-, 
+                        que facilita o entendimento dos custos dos serviços em nuvem. Assim como o DevOps revolucionou
+                        o desenvolvimento aumentando a agilidade, o FinOps aumenta o valor comercial da nuvem.
+                    </p>
+                    <a href="#" class="btn">Ler mais</a>
+            </div>                 
+            
+        </div>
+    </section>  
+    
+
+    <!-- portifolio section designe -->
+    <section class="portifolio" id="portifolio">
+        <h2 class="heading">Ultimos <span>Projetos</span></h2>
+
+
+        <div class="portifolio-container">
+        <div class="portifolio-box">
+            <img src="images/portfolio1.jpg" alt="">
+            <div class="portifolio-layer">
+                <h4>Cloud AWS</h4>
+                <p>Projeto de criação e organização de toda rede VPC em um abiente Cloud AWS. 
+                    Objetivo é estruturar a conta usando o servico aws-organizations, criando separação por ambiente de 
+                    Homologação e Produção e definição do range de IP, subnets, tabela de rotas, internet-gateway e 
+                    nat-gateway, usando sempre possibilidade de escalonamento.
+                </p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portifolio-box">
+            <img src="images/portfolio2.jpg" alt="">
+            <div class="portifolio-layer">
+                <h4>Cloud Azure</h4>
+                <p>Projeto de integração do SSO da Microsoft Entra com o portal de gerencimento do Microsoft Azure, 
+                    com objetivo de controle a autenticação de usuários e também integração com outras clouds por
+                    exemplo Aws e Gcp.
+                </p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>     
+
+        <div class="portifolio-box">
+            <img src="images/portfolio3.jpg" alt="">
+            <div class="portifolio-layer">
+                <h4>Cloud OCI</h4>
+                <p>Projeto de implantação de politica de backup com retenção e controle de custo no ambiente 
+                    Oracle, executando com a melhor economia possivel.
+                </p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portifolio-box">
+            <img src="images/portfolio4.jpg" alt="">
+            <div class="portifolio-layer">
+                <h4>Cloud GCP</h4>
+                <p>Projeto de otimização de custos e monitoramento de diversos projetos no ambiente
+                    google com envio de alertas e dashboard para controle geral de custo do mes.
+                </p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portifolio-box">
+            <img src="images/portfolio5.jpg" alt="">
+            <div class="portifolio-layer">
+                <h4>Projetos Terraform</h4>
+                <p>Projeto para construção de script para implantação com a cloud Aws, com modelo
+                    pronto para criação de uma instancia EC2 linux dentro de uma rede já existente.
+                </p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portifolio-box">
+            <img src="images/portfolio6.jpg" alt="">
+            <div class="portifolio-layer">
+                <h4>DevOps</h4>
+                <p>Projeto de construção de um site estático simples, hospedado na Aws com processo
+                    CI/CD de integração com o GitHub usando a função Git Actions para comunicação 
+                    com uma bucket S3 na Aws, esse projeto também será usado um dominio
+                    publico valido com certificado HTTPS.
+                </p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+            </div>
+        </div>        
+    </section>
+
+
+    <!--Contact section designe -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Meu <span>Contato!</span></h2>
+
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Seu Nome" required >
+                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <input type="number" name="phone" placeholder="Numero Telefone" >
+                <input type="text" name="subject" placeholder="Assunto" required>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Sua Mensagem" required></textarea>
+                <input type="submit" value="Enviar Mensagem" class="btn">
+                <input type="hidden" name="accessKey" value="ad98c4e1-2aea-4c1d-b3d6-84a91a7e73e4"> 
+                <input type="hidden" name="redirectTo" value="https://portifolio.warlei.com/obrigado.html">
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by contato@warlei.com | Todos os Direitos Reservados.</p>
+        </div> 
+
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+
+    <!-- custom js -->    
+    <script src="js/script.js"></script>
 </body>
+
+
 </html>
