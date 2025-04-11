@@ -339,6 +339,12 @@ span {
     cursor: pointer;
 }
 
+.botao-wpp {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
