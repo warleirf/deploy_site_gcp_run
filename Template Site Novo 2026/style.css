@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+/* ================= HEADER ================= */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 10%;
+
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 100;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.logo img {
+    width: 28px;
+    height: 28px;
+}
+
+/* ================= NAV ================= */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.navbar a {
+    font-size: 14px;
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #38bdf8;
+}
+
+/* ================= DROPDOWN FIX DEFINITIVO ================= */
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* botão do dropdown */
+.dropbtn {
+    font-size: 14px;
+    color: #cbd5e1;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+/* menu dropdown */
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 220px;
+    background: #111827;
+
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    transition: 0.2s ease;
+
+    z-index: 999;
+}
+
+/* links */
+.dropdown-content a {
+    display: block;
+    padding: 12px 14px;
+    font-size: 13px;
+    color: #cbd5e1;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background: rgba(56,189,248,0.1);
+    color: #38bdf8;
+}
+
+/* hover seguro (NUNCA some ao descer mouse) */
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* ================= HERO ================= */
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 10% 80px;
+    gap: 60px;
+}
+
+.home-content h1 {
+    font-size: 44px;
+    color: #fff;
+}
+
+.home-content h3 {
+    font-size: 18px;
+    color: #94a3b8;
+    margin: 10px 0 20px;
+}
+
+.home-content p {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* BOTÃO */
+.btn {
+    display: inline-block;
+    padding: 12px 18px;
+    background: #38bdf8;
+    color: #0f172a;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    background: #0ea5e9;
+}
+
+/* ================= CARDS ================= */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.services-box {
+    background: #111827;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: 0.3s;
+}
+
+.services-box:hover {
+    transform: translateY(-6px);
+    border-color: #38bdf8;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    text-align: center;
+    padding: 30px;
+    color: #64748b;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #0f172a;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .dropdown-content {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+section {
+    padding: 90px 10%;
+}
+
+/* dá respiro entre blocos repetidos */
+.services {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+/* containers mais soltos */
+.services-container {
+    gap: 28px;
+}
+
+/* cards mais “arejados” */
+.services-box {
+    padding: 26px;
+}
+
+/* melhora separação do hero */
+.home {
+    gap: 80px;
+    padding: 140px 10% 90px;
+}
+
+/* texto mais confortável */
+.home-content p {
+    margin-bottom: 14px;
+    line-height: 1.7;
+}
+
+/* títulos mais destacados */
+.heading {
+    margin-bottom: 40px;
+}
+
+/* CTA mais destacado */
+.services:last-of-type {
+    padding-bottom: 140px;
+}
+
+/* separação entre parágrafos no about */
+.home-content p {
+    margin-bottom: 16px;
+}

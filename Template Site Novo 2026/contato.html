@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Warlei Faria</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+<header class="header">
+
+    <!-- LOGO (CENTRALIZADO VISUALMENTE) -->
+    <a href="index.html" class="logo">
+        <img src="images/warlei_icon.ico" alt="logo">
+        Warlei Faria
+    </a>
+
+    <!-- MENU -->
+    <nav class="navbar">
+
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+
+        <!-- PRODUTOS COM DROPDOWN -->
+        <div class="dropdown">
+            <a href="produtos/index.html">Produtos ▾</a>
+
+            <div class="dropdown-content">
+                <a href="produtos/dashboard-condominio.html">Dashboard Condomínio</a>
+                <a href="produtos/financeiro-pessoal.html">Financeiro Pessoal</a>
+            </div>
+        </div>
+
+        <a href="projetos.html">Projetos</a>
+        <a href="contato.html">Contato</a>
+
+    </nav>
+
+    <!-- MENU MOBILE -->
+    <div id="menu-icon" class='bx bx-menu'></div>
+
+</header>
+
+<section class="home">
+
+    <div class="home-content">
+
+        <h1>Contato</h1>
+
+        <h3>Vamos conversar sobre seu projeto</h3>
+
+        <p>
+            Entre em contato para consultoria em Cloud, DevOps ou Cibersegurança.
+        </p>
+
+        <form action="https://formsubmit.co/warlei@warlei.com.br" method="post">
+
+            <input type="text" name="name" placeholder="Seu Nome" required><br><br>
+            <input type="email" name="email" placeholder="Seu E-mail" required><br><br>
+            <input type="text" name="subject" placeholder="Assunto" required><br><br>
+
+            <textarea name="message" cols="30" rows="6" placeholder="Sua mensagem"></textarea><br><br>
+
+            <input type="hidden" name="_next" value="https://warlei.com.br/obrigado.html">
+
+            <button type="submit" class="btn">Enviar Mensagem</button>
+
+        </form>
+
+    </div>
+
+    <div class="home-img">
+        <img src="images/home4.png" alt="Contato">
+    </div>
+
+</section>
+
+<footer class="footer">
+    <p>© 2026 Warlei Faria | Cloud & Cibersegurança</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
